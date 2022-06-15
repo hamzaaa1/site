@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(university.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+    margin-top: auto;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    padding: 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(83, 142, 178);
+    text-transform: uppercase;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: large;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background-color: rgb(89, 74, 170);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top:55% ;
+    transform: translateY(-50%);
+    text-align: center;
+    color: aliceblue;
+}
+.content h1{
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content p{
+    margin: 10px;
+    font-weight: 100;
+    line-height: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 10px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 2px solid  #594aaa ;
+    background: transparent;
+    color: aliceblue;
+    cursor: pointer; 
+    position: relative;
+    overflow: hidden;
+}
+span{
+background: rgb(83, 142, 178);
+height: 100%;
+width: 0%;
+border-radius:25px;
+position: absolute;
+left: 0;
+bottom: 0;
+z-index:-1;
+transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
