@@ -22,8 +22,8 @@
 <body style="  font-family: 'Oswald', sans-serif;
     font-family: 'Titillium Web', sans-serif;">
 
-    <section class="vh-100">
-        <div class="container py-2 h-100">
+    <section class="vh-100" >
+        <div class="container py-2 h-100" style="width:75%;" >
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col col-xl-10">
                     <div class="card" style="border-radius: 1rem;">
