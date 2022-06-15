@@ -7,9 +7,10 @@
     </head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <body>
-         <div class="banner">
+         <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/university.jpg);">
              <div class="navbar">
-                 <img src="UAEDOC1.png" class="logo">
+
+                 <img src="../img/UAEDOC1.png" class="logo">
                  <ul>
                      <li><a href="#"><i class="fa fa-fw fa-home"></i> Acceuil</a></li>
                      <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contactez-nous</a></li>
