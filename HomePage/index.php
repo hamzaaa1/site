@@ -13,7 +13,7 @@
                  <img src="../img/UAEDOC1.png" class="logo">
                  <ul>
                      <li><a href="#"><i class="fa fa-fw fa-home"></i> Acceuil</a></li>
-                     <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contactez-nous</a></li>
+                     <li><a href="contact.php"><i class="fa fa-fw fa-envelope"></i> Contactez-nous</a></li>
                      <li><a href="#"> <i class="fa fa-fw fa-search"></i> À propos</a></li>
                      <li><a href="#"><i class="fa fa-fw fa-user"></i> Authentifier</a></li>
                  </ul>

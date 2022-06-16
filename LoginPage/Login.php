@@ -24,19 +24,26 @@
 
     <section class="vh-100" >
         <div class="container py-2 h-100" style="width:75%;" >
+        
             <div class="row d-flex justify-content-center align-items-center h-100">
+            
                 <div class="col col-xl-10">
-                    <div class="card" style="border-radius: 1rem;">
+                
+                    <div class="card" style="border-radius: 1rem;" >
+                    <img src="../img/UAEDOC1.png"  class="logoo">
+                    
                         <div class="row g-0">
                             <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                <img src="../img/bg-1.jpg" alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;height:100%" />
+                                <img src="../img/bg-1.jpg" alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
                             </div>
-                            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                            <div class="col-md-6 col-lg-7 d-flex align-items-center ">
+                           
                                 <div class="card-body p-4 p-lg-5 text-black">
 
                                     <form>
 
                                         <div class="d-flex align-items-center mb-3 pb-1">
+                                        <!-- <img src="../img/UAEDOC1.png" style="height: 100px;width: 150px;"> -->
                                             <!-- <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i> -->
                                             <span class="h1 fw-bold mb-0">UAE Tetouan</span>
                                         </div>
