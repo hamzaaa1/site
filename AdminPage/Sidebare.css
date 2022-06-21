@@ -3,8 +3,8 @@
 :root {
     --header-height: 3rem;
     --nav-width: 68px;
-    --first-color: #4723D9;
-    --first-color-light: #AFA5D9;
+    --first-color: #3768e6;
+    --first-color-light: #dad9e0;
     --white-color: #F7F6FB;
     --body-font: 'Nunito', sans-serif;
     --normal-font-size: 1rem;
@@ -23,8 +23,6 @@ body {
     padding: 0 1rem;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Titillium Web', sans-serif;"
     transition: .5s
 }
 
@@ -52,22 +50,8 @@ a {
     font-size: 1.5rem;
     cursor: pointer
 }
-
-.header_img {
-    width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    overflow: hidden
-}
-
-.header_img img {
-    width: 40px
-}
-
 .l-navbar {
-    position: fixed;
+    position:fixed;
     top: 0;
     left: -30%;
     width: var(--nav-width);
@@ -95,9 +79,10 @@ a {
     padding: .5rem 0 .5rem 1.5rem
 }
 
-.nav_logo {
-    margin-bottom: 2rem
-}
+/* .nav_logo {
+    margin-bottom: 2rem;
+width: 10px;
+} */
 
 .nav_logo-icon {
     font-size: 1.25rem;
@@ -113,11 +98,12 @@ a {
     position: relative;
     color: var(--first-color-light);
     margin-bottom: 1.5rem;
-    transition: .3s
+    transition: .3s;
+   text-decoration: none;
 }
 
 .nav_link:hover {
-    color: var(--white-color)
+    color: var(--white-color);
 }
 
 .nav_icon {
@@ -133,7 +119,8 @@ a {
 }
 
 .active {
-    color: var(--white-color)
+    color: var(--white-color);
+    
 }
 
 .active::before {
