@@ -13,12 +13,12 @@
 <body id="body-pd">
     <header class="header" id="header">
         <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
-        <div><button type="button" class="btn btn-primary"><i class='bx bx-log-out nav_icon'></i> Deconnecter</button></div>
+        <div> <a class="btn btn-primary" href="deconnecter.php"><i class='bx bx-log-out nav_icon'></i>Déconnexion</a></div>
     </header>
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
-            <div> <a href="#" class="nav_logo"><img src="../img/1111.ico" style="width:100px;background-color:brown;top:-100px;"><span class="nav_logo-name"></span> </a>
-                <div class="nav_list"> <a href="#" class="nav_link active"> <i class='bx bxs-graduation nav_icon'></i><span class="nav_name">Doctorants</span> </a>
+            <div>   <a href="#" class="nav_logo"> <i class='bx bxs-graduation nav_logo'></i> <span class="nav_logo-name">UAEDOC</span> </a>
+                <div class="nav_list"> <a href="#" class="nav_link active"><i class='bx bx-group nav_icon'></i><span class="nav_name">Doctorants</span> </a>
                     <a href="#" class="nav_link"> <i class='bx bx-book-reader nav_icon'></i> <span class="nav_name">Professeurs</span> </a>
                     <a href="#" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Structure de Recherche</span> </a>
                 </div>
@@ -27,7 +27,68 @@
     </div>
     <!--Container Main start-->
     <div style="margin-top:100px;">
-        <form class="row g-3 needs-validation" novalidate>
+    <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col"><center>Nom</center></th>
+      <th scope="col"><center>Prénom</center></th>
+      <th scope="col"><center>CIN</center></th>
+      <th scope="col"><center>E-mail</center></th>
+      <th scope="col"><center>Établissemant</center></th>
+      <th scope="col"><center>Formation Doctorale</center></th>
+      <th scope="col"><center>Supprimer</center></th>
+      <th scope="col"><center>Modifier</center></th>
+      <th scope="col"><center>Détails</center></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row"><center><strong>Abdourabihi</strong></center></td>
+      <td><center>Hamza</center></td>
+      <td><center>SH207222</center></td>
+      <td><center>abdourabihi10@gmail.com</center></td>
+      <td><center>FS</center></td>
+      <td><center>SI</center></td>
+      <td><center><a href="#"><i class='bx bx-trash' style='color:#ea1818'  ></i></a></center></td>
+      <td><center><a href="#"><i class='bx bxs-edit' style='color:#39d119'  ></i></a></center></td>
+      <td><center><a href="#"><i class='bx bxs-detail' style='color:#1c30c2'  ></i></a></center></td>
+    </tr>
+    <tr>
+      <td scope="row"><center><strong>Abdourabihi</strong></center></td>
+      <td><center>Hamza</center></td>
+      <td><center>SH207222</center></td>
+      <td><center>abdourabihi10@gmail.com</center></td>
+      <td><center>FS</center></td>
+      <td><center>SI</center></td>
+      <td><center><a href="#"><i class='bx bx-trash' style='color:#ea1818'  ></i></a></center></td>
+      <td><center><a href="#"><i class='bx bxs-edit' style='color:#39d119'  ></i></a></center></td>
+      <td><center><a href="#"><i class='bx bxs-detail' style='color:#1c30c2'  ></i></a></center></td>
+    </tr>
+    <tr>
+      <td scope="row"><center><strong>Abdourabihi</strong></center></td>
+      <td><center>Hamza</center></td>
+      <td><center>SH207222</center></td>
+      <td><center>abdourabihi10@gmail.com</center></td>
+      <td><center>FS</center></td>
+      <td><center>SI</center></td>
+      <td><center><a href="#"><i class='bx bx-trash' style='color:#ea1818'  ></i></a></center></td>
+      <td><center><a href="#"><i class='bx bxs-edit' style='color:#39d119'  ></i></a></center></td>
+      <td><center><a href="#"><i class='bx bxs-detail' style='color:#1c30c2'  ></i></a></center></td>
+    </tr>
+    <tr>
+      <td scope="row"><center><strong>Abdourabihi</strong></center></td>
+      <td><center>Hamza</center></td>
+      <td><center>SH207222</center></td>
+      <td><center>abdourabihi10@gmail.com</center></td>
+      <td><center>FS</center></td>
+      <td><center>SI</center></td>
+      <td><center><a href="#"><i class='bx bx-trash' style='color:#ea1818'  ></i></a></center></td>
+      <td><center><a href="#"><i class='bx bxs-edit' style='color:#39d119'  ></i></a></center></td>
+      <td><center><a href="#"><i class='bx bxs-detail' style='color:#1c30c2'  ></i></a></center></td>
+    </tr>
+  </tbody>
+</table>
+        <!-- <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-3">
                 <label for="validationCustom01" class="form-label">Nom</label>
                 <input type="text" class="form-control" id="validationCustom01" placeholder="nom" required>
@@ -166,7 +227,7 @@
                 <button class="btn btn-primary" type="submit">Ajouter</button>
             </div>
         </form>
-    </div>
+    </div> -->
     <!--Container Main end-->
     <script src="sidebar.js"></script>
 </body>

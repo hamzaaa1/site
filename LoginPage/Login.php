@@ -1,8 +1,12 @@
 <?php
+session_start();
 
-
-
-?>
+if (!empty($_SESSION['msg'])) { ?>
+    <script>
+        alert(<?php echo $_SESSION['msg']; ?>)
+    </script>
+<?php unset($_SESSION['msg']);
+} ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,8 +44,7 @@
                            
                                 <div class="card-body p-4 p-lg-5 text-black">
 
-                                    <form>
-
+                                <form action="traitement_connecter.php" method="post">
                                         <div class="d-flex align-items-center mb-3 pb-1">
                                         <!-- <img src="../img/UAEDOC1.png" style="height: 100px;width: 150px;"> -->
                                             <!-- <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i> -->
@@ -52,18 +55,18 @@
 
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="form2Example17">Adresse e-mail</label>
-                                            <input type="email" id="form2Example17" class="form-control form-control-lg" />
+                                            <input type="text" id="form2Example17" name="email" class="form-control form-control-lg" />
                                         </div>
 
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="form2Example27">Mot de passe</label>
-                                            <input type="password" id="form2Example27" class="form-control form-control-lg" />
+                                            <input type="password" id="form2Example27" name="mot" class="form-control form-control-lg" />
                                         </div>
 
                                         <div class="pt-1 mb-4">
-                                            <button class="btn btn-primary btn-lg btn-block" type="button">Connexion</button>
+                                            <button class="btn btn-primary btn-lg btn-block" type="submit" name="submit">Connexion</button>
                                         </div>
-                                        <p class="mb-5 pb-lg-2" style="color: #393f81;">Si vous avez un problème ? <a href="#!" style="color: rgba(0, 172, 193, 1);">Contactez-nous</a></p>
+                                        <p class="mb-5 pb-lg-2" style="color: #393f81;">Si vous avez un problème ? <a href="../HomePage/contact.php" style="color: rgba(0, 172, 193, 1);">Contactez-nous</a></p>
                                     </form>
 
                                 </div>
