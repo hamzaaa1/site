@@ -52,12 +52,10 @@ if (!empty($_SESSION['msg'])) { ?>
                                         </div>
 
                                         <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Connectez-vous à votre compte</h5>
-
                                         <div class="form-outline mb-4">
-                                            <label class="form-label" for="form2Example17">Adresse e-mail</label>
+                                            <label class="form-label" for="form2Example17">Nom d'utilisateur</label>
                                             <input type="text" id="form2Example17" name="email" class="form-control form-control-lg" />
                                         </div>
-
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="form2Example27">Mot de passe</label>
                                             <input type="password" id="form2Example27" name="mot" class="form-control form-control-lg" />
