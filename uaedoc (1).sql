@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1
--- Généré le : mar. 21 juin 2022 à 16:09
--- Version du serveur : 10.4.22-MariaDB
--- Version de PHP : 8.1.2
+-- Host: 127.0.0.1
+-- Generation Time: Jun 29, 2022 at 07:16 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `uaedoc`
+-- Database: `uaedoc`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `admin`
+-- Table structure for table `admin`
 --
 
 CREATE TABLE `admin` (
@@ -34,16 +34,16 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Déchargement des données de la table `admin`
+-- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`id`, `e-mail`, `password`) VALUES
-(1, 'admin', '9857897a778a17463e984d745d93df10');
+(1, 'admin', 'c4f0c13870999501d2ca939d58a51fff');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `doctorants`
+-- Table structure for table `doctorants`
 --
 
 CREATE TABLE `doctorants` (
@@ -64,13 +64,23 @@ CREATE TABLE `doctorants` (
   `etablissemant` enum('FS','ENSA','ENS','ENA') NOT NULL,
   `date_inscription` datetime NOT NULL,
   `observation` text DEFAULT NULL,
+  `soutenance` enum('Non soutenu','Soutenu') NOT NULL,
   `id_admin` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `doctorants`
+--
+
+INSERT INTO `doctorants` (`id_doc`, `Nom`, `Prenom`, `CIN`, `CNE`, `date_de_naissance`, `lieu_de_naissance`, `directeur_these`, `sujet_these`, `niveau`, `adresse`, `adresse_mail`, `tlf`, `formation_doctorale`, `etablissemant`, `date_inscription`, `observation`, `soutenance`, `id_admin`) VALUES
+(22, 'bellaou', 'moussa', 'SB125483', 'D45568812', '2001-11-24', 'laayoun', 'Redouane', 'Inflation dollar', '2A', 'Taza hay madanii', 'azza.mohamed@gmail.com', 777111106, 'SI', 'ENS', '2022-06-24 03:01:44', '', 'Non soutenu', 1),
+(23, 'Redouane', 'Amghnouss', 'SH209253', 'B12354257', '2001-06-16', 'Laayoune', 'Rachid Almorid', 'rorbotic', '1A', 'av 84 laayoune', 'redooox.gam@gmail.com', 606060606, 'BCG', 'FS', '2022-06-24 16:26:40', '', 'Soutenu', 1),
+(25, 'Abdourabihi', 'Mohamed', 'SB125483', 'D45568812', '2022-06-03', 'Guelmim', 'kdkdkkd', 'mcmcjj', '2A', 'Hay hassani av la marine bloc o nr43', 'abdourabihi10@gmail.com', 777111106, 'BCG', 'ENS', '2022-06-27 19:30:37', 'MMMMMMMMMMMMM', 'Soutenu', 1);
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `professeur`
+-- Table structure for table `professeur`
 --
 
 CREATE TABLE `professeur` (
@@ -83,10 +93,17 @@ CREATE TABLE `professeur` (
   `id` int(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `professeur`
+--
+
+INSERT INTO `professeur` (`id_professeur`, `Nom`, `Prenom`, `departement`, `structure_de_recherche`, `specialite`, `id`) VALUES
+(6, 'rachid', 'Mohamed', 'Informatique', 'Abdtt', 'VOIP', 1);
+
 -- --------------------------------------------------------
 
 --
--- Structure de la table `structure`
+-- Table structure for table `structure`
 --
 
 CREATE TABLE `structure` (
@@ -99,83 +116,91 @@ CREATE TABLE `structure` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Index pour les tables déchargées
+-- Dumping data for table `structure`
+--
+
+INSERT INTO `structure` (`id_structure`, `nom`, `responsable`, `membres`, `axes`, `id_admin`) VALUES
+(5, 'Abdtt', 'hamza', '182', '222', 1),
+(6, 'Abdourabihi', 'hamza', '182', '222', 1);
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Index pour la table `admin`
+-- Indexes for table `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `e-mail` (`e-mail`);
 
 --
--- Index pour la table `doctorants`
+-- Indexes for table `doctorants`
 --
 ALTER TABLE `doctorants`
   ADD PRIMARY KEY (`id_doc`),
   ADD KEY `FK_doctorants` (`id_admin`);
 
 --
--- Index pour la table `professeur`
+-- Indexes for table `professeur`
 --
 ALTER TABLE `professeur`
   ADD PRIMARY KEY (`id_professeur`),
   ADD KEY `FK_professeur` (`id`);
 
 --
--- Index pour la table `structure`
+-- Indexes for table `structure`
 --
 ALTER TABLE `structure`
   ADD PRIMARY KEY (`id_structure`),
   ADD KEY `FK_structure` (`id_admin`);
 
 --
--- AUTO_INCREMENT pour les tables déchargées
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT pour la table `admin`
+-- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT pour la table `doctorants`
+-- AUTO_INCREMENT for table `doctorants`
 --
 ALTER TABLE `doctorants`
-  MODIFY `id_doc` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_doc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
--- AUTO_INCREMENT pour la table `professeur`
+-- AUTO_INCREMENT for table `professeur`
 --
 ALTER TABLE `professeur`
-  MODIFY `id_professeur` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_professeur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT pour la table `structure`
+-- AUTO_INCREMENT for table `structure`
 --
 ALTER TABLE `structure`
-  MODIFY `id_structure` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_structure` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- Contraintes pour les tables déchargées
+-- Constraints for dumped tables
 --
 
 --
--- Contraintes pour la table `doctorants`
+-- Constraints for table `doctorants`
 --
 ALTER TABLE `doctorants`
   ADD CONSTRAINT `FK_doctorants` FOREIGN KEY (`id_admin`) REFERENCES `admin` (`id`);
 
 --
--- Contraintes pour la table `professeur`
+-- Constraints for table `professeur`
 --
 ALTER TABLE `professeur`
   ADD CONSTRAINT `FK_professeur` FOREIGN KEY (`id`) REFERENCES `admin` (`id`);
 
 --
--- Contraintes pour la table `structure`
+-- Constraints for table `structure`
 --
 ALTER TABLE `structure`
   ADD CONSTRAINT `FK_structure` FOREIGN KEY (`id_admin`) REFERENCES `admin` (`id`);

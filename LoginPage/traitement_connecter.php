@@ -26,7 +26,7 @@ try {
         }else{
            $_SESSION['id']=$result['id'];
            $_SESSION['autorisation']="oui";
-           header('location:../AdminPage/Sidebar.php');
+           header('location:../AdminPage/AdminPage.php');
         }
       
         
