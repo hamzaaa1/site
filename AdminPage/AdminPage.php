@@ -61,6 +61,7 @@ unset($_SESSION['msg']);
     <!--Container Main start-->
     <!-- <div style="margin-top:100px;"> -->
     <div class="container-feild border  rounded shadow-lg p-3 mb-5 bg-body p-2 bd-highlight " style="margin-top: 2%;">
+<<<<<<< HEAD
         <div style="text-align: right;">
             <form action="AdminPageRecherche.php" method="POST" id="formDoc">
                 <select class="custom-select" id="forme3" name="forme3">
@@ -91,6 +92,17 @@ unset($_SESSION['msg']);
         <ul id="resultsList"></ul>
         <center>
             <table class="table table-striped" style="width: 85%;">
+=======
+        <select class="form-control form-control-user" style="width:17%;position:relative;left:75%;" onchange="Triagedoctorants(this.value)">
+            <option value="">Choisir l'etablissement</option>
+            <option value="ENSA">ENSA</option>
+            <option value="FS"> FS</option>
+            <option value="ENS"> ENS</option>
+            <option value="ENA"> ENA</option>
+        </select>
+        <center>
+            <table class="table table-striped" style="width: 85%;" id="txtHint">
+>>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                 <thead>
                     <tr>
                         <th scope="col">
@@ -187,7 +199,13 @@ unset($_SESSION['msg']);
                         <?php
                         }
                         ?>
+<<<<<<< HEAD
                 </tbody>
+=======
+                  
+                </tbody>
+
+>>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
             </table>
             <!-- Button trigger modal -->
             <a href="AjouterDoctorants1.php" class="btn btn-primary">
@@ -196,7 +214,31 @@ unset($_SESSION['msg']);
             <!-- </div> -->
         </center>
     </div>
+<<<<<<< HEAD
 
+=======
+    <script>
+        function Triagedoctorants(str) {
+            var xhttp;
+            if (str == "") {
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+            } else {
+                xhttp = new XMLHttpRequest();
+
+
+                xhttp.onreadystatechange = function() {
+
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("txtHint").innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", "Triagedoctorants.php?Id=" + str, true);
+                xhttp.send();
+            }
+        }
+    </script>
+>>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
 <?php
                     } catch (exception $e) {
                         echo "erreur" . $e->getMessage();

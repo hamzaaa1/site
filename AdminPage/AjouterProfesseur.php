@@ -27,10 +27,15 @@ unset($_SESSION['msg']);
         .content {
             height: 70vh;
         }
+<<<<<<< HEAD
+=======
+       
+>>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
     </style>
 </head>
 
 <body id="body-pd">
+<<<<<<< HEAD
     <?php
     $_SESSION['i'] = 2;
     include 'Sidebare.php';  ?>
@@ -39,6 +44,16 @@ unset($_SESSION['msg']);
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" style="fill: rgba(24, 103, 211, 1)">
             <path d="M15 2.013H9V9H2v6h7v6.987h6V15h7V9h-7z"></path>
         </svg> Ajouter un Professeur :
+=======
+<?php
+ $_SESSION['i']=2;
+ include 'Sidebare.php';  ?>
+
+<h3 style="font-family: 'Nunito', sans-serif; color:rgba(24, 103, 211, 1);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" style="fill: rgba(24, 103, 211, 1)">
+            <path d="M15 2.013H9V9H2v6h7v6.987h6V15h7V9h-7z"></path>
+            </svg> Ajouter un Professeur :
+>>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
     </h3>
 
     <div class="content d-flex justify-content-center align-items-center  flex-column bd-highlight mb-3 ">
@@ -55,6 +70,7 @@ unset($_SESSION['msg']);
                             <input type="text" class="form-control" id="prenom" placeholder=" prenom" name="prenom" required>
                         </div>
                         <div class="form-group col-md-6">
+<<<<<<< HEAD
                             <label for="exampleInputEmail1">Département </label>
                             <select class="custom-select" id="département" name="département" required>
                                 <option id="searcharea_expanded_fisrt_option" value="Biologie">Biologie</option>
@@ -63,10 +79,15 @@ unset($_SESSION['msg']);
                                 <option value="Mathématiques">Mathématiques</option>
                                 <option value="Physique">Physique</option>
                             </select>
+=======
+                            <label for="inputEmail4">Département</label>
+                            <input type="text" class="form-control" id="département" placeholder="département" name="département" required>
+>>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                         </div>
                         <div class="form-group col-md-6">
                             <label for="exampleInputEmail1">Structure de recherche</label>
                             <select class="custom-select" id="etab" name="structure" required>
+<<<<<<< HEAD
                                 <?php
                                 try {
                                     $i = 0;
@@ -79,21 +100,45 @@ unset($_SESSION['msg']);
                                 ?>
                                         <option value="<?php echo $result12['nom']; ?>"> <?php echo $result12['nom']; ?> </option>
                                     <?php } ?>
+=======
+                            <?php
+                              try {
+                                $i=0;
+                                $bdd = new PDO("mysql:host=$serveur;dbname=$base;charset=utf8", $utilisateur, $mdp);
+
+$reponse12 = " SELECT * FROM `structure` WHERE `id_admin`=? ";
+$stm12 = $bdd->prepare($reponse12);
+$donnees14 = array($_SESSION['id']);
+$stm12->execute($donnees14);
+while ($result12 = $stm12->fetch(PDO::FETCH_ASSOC)) {
+?>
+                                <option value="<?php echo $result12['nom']; ?>"> <?php echo $result12['nom']; ?> </option>
+                                <?php } ?>
+>>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                             </select>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Spécialité</label>
                             <input type="text" class="form-control" id="spécialité" placeholder="spécialité" name="spécialité" required>
                         </div>
+<<<<<<< HEAD
                     </div>
                     <div class="float-right">
                         <button class="btn btn-primary" name="submit" type="submit">Ajouter</button>
                     </div>
 
+=======
+                        </div>
+                     <div class="float-right">
+                   <button class="btn btn-primary" name="submit" type="submit">Ajouter</button>
+                    </div>
+              
+>>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
             </form>
         </section>
 
     </div>
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
@@ -104,3 +149,17 @@ unset($_SESSION['msg']);
 </body>
 
 </html>
+=======
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+        <?php
+          } catch (exception $e) {
+            echo "erreur" . $e->getMessage();
+        } ?>
+</body>
+
+</html>
+
+
+>>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa

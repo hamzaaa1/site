@@ -58,11 +58,19 @@ unset($_SESSION['msg']);
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Membres de Structures</label>
+<<<<<<< HEAD
                             <input type="text" class="form-control" id="membres" placeholder="membres de structures" name="membres" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputPassword4">Axes de Structure</label>
                             <input type="text" class="form-control" id="axes" placeholder="axes de structures" name="axes" required>
+=======
+                            <input type="number" class="form-control" id="membres" placeholder="membres de structures" name="membres" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Axes de Structure</label>
+                            <input type="number" class="form-control" id="axes" placeholder="axes de structures" name="axes" required>
+>>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                         </div> </div>
                     <div class="float-right">
                     <button class="btn btn-primary" name="submit" type="submit">Ajouter</button>

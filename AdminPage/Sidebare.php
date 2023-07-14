@@ -30,7 +30,11 @@
     ?>
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
+<<<<<<< HEAD
             <div> <a href="../AdminPage/AdminPage.php" class="nav_logo-icon"> <i class='bx bxs-graduation nav_logo'></i> <span class="nav_logo-name">UAEDOC</span> </a>
+=======
+            <div> <a href="#" class="nav_logo-icon"> <i class='bx bxs-graduation nav_logo'></i> <span class="nav_logo-name">UAEDOC</span> </a>
+>>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                 <div class="nav_list"> 
                     <a href="AdminPage.php" class="nav_link active" style="text-decoration:none;"><i class='bx bx-group nav_icon'></i><span class="nav_name">Doctorants</span> </a>
                     <a href="Professeurs.php" class="nav_link" style="text-decoration:none;"> <i class='bx bx-book-reader nav_icon'></i> <span class="nav_name">Professeurs</span> </a>
@@ -44,7 +48,11 @@
     ?>
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
+<<<<<<< HEAD
             <div> <a href="../AdminPage/AdminPage.php" class="nav_logo-icon"> <i class='bx bxs-graduation nav_logo'></i> <span class="nav_logo-name">UAEDOC</span> </a>
+=======
+            <div> <a href="#" class="nav_logo-icon"> <i class='bx bxs-graduation nav_logo'></i> <span class="nav_logo-name">UAEDOC</span> </a>
+>>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                 <div class="nav_list"> 
                     <a href="AdminPage.php" class="nav_link" style="text-decoration:none;"><i class='bx bx-group nav_icon'></i><span class="nav_name">Doctorants</span> </a>
                     <a href="Professeurs.php" class="nav_link active" style="text-decoration:none;"> <i class='bx bx-book-reader nav_icon'></i> <span class="nav_name">Professeurs</span> </a>
@@ -58,7 +66,11 @@
     ?>
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
+<<<<<<< HEAD
             <div> <a href="../AdminPage/AdminPage.php" class="nav_logo-icon"> <i class='bx bxs-graduation nav_logo'></i> <span class="nav_logo-name">UAEDOC</span> </a>
+=======
+            <div> <a href="#" class="nav_logo-icon"> <i class='bx bxs-graduation nav_logo'></i> <span class="nav_logo-name">UAEDOC</span> </a>
+>>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                 <div class="nav_list"> 
                     <a href="AdminPage.php" class="nav_link" style="text-decoration:none;"><i class='bx bx-group nav_icon'></i><span class="nav_name">Doctorants</span> </a>
                     <a href="Professeurs.php" class="nav_link" style="text-decoration:none;"> <i class='bx bx-book-reader nav_icon'></i> <span class="nav_name">Professeurs</span> </a>
@@ -72,7 +84,11 @@
     ?>
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
+<<<<<<< HEAD
             <div> <a href="../AdminPage/AdminPage.php" class="nav_logo-icon"> <i class='bx bxs-graduation nav_logo'></i> <span class="nav_logo-name">UAEDOC</span> </a>
+=======
+            <div> <a href="#" class="nav_logo-icon"> <i class='bx bxs-graduation nav_logo'></i> <span class="nav_logo-name">UAEDOC</span> </a>
+>>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                 <div class="nav_list"> 
                     <a href="AdminPage.php" class="nav_link" style="text-decoration:none;"><i class='bx bx-group nav_icon'></i><span class="nav_name">Doctorants</span> </a>
                     <a href="Professeurs.php" class="nav_link" style="text-decoration:none;"> <i class='bx bx-book-reader nav_icon'></i> <span class="nav_name">Professeurs</span> </a>

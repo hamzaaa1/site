@@ -61,6 +61,7 @@ try {
                                 <input type="text" class="form-control" id="prenom" placeholder="Entre prenom" name="prenom" value="<?php echo $result['Prenom']; ?>" required>
                             </div>
                             <div class="form-group col-md-6">
+<<<<<<< HEAD
                                     <label for="exampleInputEmail1">Département </label>
                                     <select class="custom-select" id="département" readonly name="département" required>
                                         <option id="searcharea_expanded_fisrt_option" value="<?php echo $result['departement']; ?>"><?php echo $result['departement']; ?></option>
@@ -93,6 +94,11 @@ try {
 
                                     </select>
                                 </div>
+=======
+                                <label for="inputEmail4">Département</label>
+                                <input type="text" class="form-control" id="département" placeholder="département" name="département" value="<?php echo $result['departement']; ?>" required>
+                            </div>
+>>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                             <div class="form-group col-md-6">
                                 <label for="exampleInputEmail1">Structure de Recherche</label>
                                 <select class="custom-select" id="forme" readonly name="forme" required>
