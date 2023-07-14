@@ -11,11 +11,8 @@ if (!empty($_SESSION['msg'])) { ?>
 <?php
 }
 unset($_SESSION['msg']);
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
 ?>
 
 <!DOCTYPE html>
@@ -53,36 +50,20 @@ unset($_SESSION['msg']);
     $_SESSION['i'] = 1;
     include 'Sidebare.php';  ?>
     <h3 style="font-family: 'Nunito', sans-serif; color:rgba(24, 103, 211, 1);">
-<<<<<<< HEAD
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" style="fill: rgba(24, 103, 211, 1)">
             <path d="M15 2.013H9V9H2v6h7v6.987h6V15h7V9h-7z"></path>
         </svg> Ajouter un Doctorant :
     </h3>
     <div class="content d-flex justify-content-center align-items-center  flex-column bd-highlight mb-3 ">
-=======
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" style="fill: rgba(24, 103, 211, 1)">
-            <path d="M15 2.013H9V9H2v6h7v6.987h6V15h7V9h-7z"></path>
-            </svg> Ajouter un Doctorant :
-    </h3>
-    <div class="content d-flex justify-content-cEntrerr align-items-cEntrerr  flex-column bd-highlight mb-3 ">
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
 
 
         <div class="position-relative m-4  p-2 bd-highlight" style="width:50%;">
             <div class="progress" style="height: 1px;">
-<<<<<<< HEAD
                 <div class="progress-bar" id="progress-bar" role="progressbar" style="width:0%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <div data-title="Information personnel" id="p1" class="position-absolute top-2 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</div>
             <div data-title="Education" id="p2" class="position-absolute top-2 start-50 translate-middle btn btn-sm btn-secondary  rounded-pill" style="width: 2rem; height:2rem;">2</div>
             <div data-title="Autre" id="p3" class="position-absolute top-2 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</div>
-=======
-                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <div data-title="Information personnel" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</div>
-            <div data-title="Education" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</div>
-            <div data-title="Autre" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</div>
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
         </div>
 
 
@@ -93,7 +74,6 @@ unset($_SESSION['msg']);
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Nom</label>
-<<<<<<< HEAD
                             <input type="text" class="form-control" id="nom" placeholder="Ecrivez le nom" name="nom" required>
                         </div>
                         <div class="form-group col-md-6">
@@ -123,47 +103,12 @@ unset($_SESSION['msg']);
                         <div class="form-group col-md-6">
                             <label for="exampleInputEmail1">Telephone</label>
                             <input type="text" class="form-control" id="tele" aria-describedby="emailHelp" placeholder="Entrez le numéro de téléphone" name="tele" required>
-=======
-                            <input type="text" class="form-control" id="nom" placeholder="Entrer nom" name="nom" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputPassword4">Prenom</label>
-                            <input type="text" class="form-control" id="prenom" placeholder="Entrer prenom" name="prenom" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputEmail4">Date de naissance</label>
-                            <input type="date" class="form-control" id="Daten" placeholder="Entrer date de naissance" name="Daten" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputPassword4">Lieu de naissance</label>
-                            <input type="text" class="form-control" id="Lieun" placeholder="Entrer lieu de naissance" name="Lieun" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="exampleInputEmail1">CIN</label>
-                            <input type="text" class="form-control" id="cin" aria-describedby="emailHelp" placeholder="Entrer CIN" name="cin" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="exampleInputEmail1">CNE</label>
-                            <input type="text" class="form-control" id="cne" aria-describedby="emailHelp" placeholder="Entrerr CNE" name="cne" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="exampleInputEmail1">Adresse</label>
-                            <input type="text" class="form-control" id="adresse" aria-describedby="emailHelp" placeholder="Entrerr adresse" name="adresse" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="exampleInputEmail1">Telephone</label>
-                            <input type="text" class="form-control" id="tele" aria-describedby="emailHelp" placeholder="Entrerr numbre telephone" name="tele" required>
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">Adresse-mail</label>
-<<<<<<< HEAD
                         <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter l'email" name="email" required>
-=======
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Entrerr email" name="email" required>
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                     </div>
 
                     <div class="float-right">
@@ -192,7 +137,6 @@ unset($_SESSION['msg']);
                             </select>
                         </div>
                         <div class="form-group col-md-6">
-<<<<<<< HEAD
                             <label for="exampleInputEmail1">Niveau </label>
                             <select class="custom-select" id="niveau" name="niveau" required>
                                 <option id="searcharea_expanded_fisrt_option" value="1A">1A</option>
@@ -212,22 +156,6 @@ unset($_SESSION['msg']);
                         <div class="form-group col-md-6">
                             <label for="exampleInputEmail1">Sujet de these</label>
                             <input type="text" class="form-control" id="sujet" aria-describedby="emailHelp" placeholder="Le sujet est" name="sujet" required>
-=======
-                            <label for="exampleInputEmail1">Niveau</label>
-                            <input type="text" class="form-control" id="niveau" aria-describedby="emailHelp" placeholder="Entrer votre niveau" name="niveau" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="exampleInputEmail1">Date d'inscription</label>
-                            <input type="datetime" class="form-control" id="datei" aria-describedby="emailHelp" readonly value="<?php echo date("Y-m-d H:i:s"); ?>" placeholder="Entrerr la date d'inscription" name="datei">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="exampleInputEmail1">Directeur de these</label>
-                            <input type="text" class="form-control" id="directeur" aria-describedby="emailHelp" placeholder="Entrer le directeur de thèse" name="directeur" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="exampleInputEmail1">Sujet de these</label>
-                            <input type="text" class="form-control" id="sujet" aria-describedby="emailHelp" placeholder="Entrer le sujet de thèse " name="sujet" required>
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                         </div>
 
                     </div>
@@ -260,23 +188,17 @@ unset($_SESSION['msg']);
     </div>
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
     <script>
         function NextStep(step) {
 
             var partform1 = document.getElementById('step1'),
                 partform2 = document.getElementById('step2'),
                 partform3 = document.getElementById('step3');
-<<<<<<< HEAD
 
             var line1 = document.getElementById('progress-bar'),
                 p2 = document.getElementById('p2'),
                 p3 = document.getElementById('p3');
-=======
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
             if (step == 1) {
                 var nom = document.getElementById("nom"),
                     prenom = document.getElementById("prenom"),
@@ -294,17 +216,12 @@ unset($_SESSION['msg']);
                     partform1.style.display = "none";
                     partform2.style.display = "block";
                     partform3.style.display = "none";
-<<<<<<< HEAD
                     line1.style.width = "50%";
                     p2.classList.remove('btn-secondary');
                     p2.classList.add('btn-primary');
                 }
 
 
-=======
-                }
-
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
             } else if (step == 2) {
                 var etab = document.getElementById("etab"),
                     forme = document.getElementById("forme"),
@@ -313,21 +230,14 @@ unset($_SESSION['msg']);
                     directeur = document.getElementById("directeur"),
                     sujet = document.getElementById("sujet");
                 if (etab.value == '' || forme.value == '' || niveau.value == '' || datei.value == '' || directeur.value == '' || sujet.value == '') {
-<<<<<<< HEAD
                     alert('Vous avez oublier quelque(s) champ(s)');
-=======
-                    alert('not ok');
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                 } else {
                     partform1.style.display = "none";
                     partform2.style.display = "none";
                     partform3.style.display = "block";
-<<<<<<< HEAD
                     line1.style.width = "100%";
                     p3.classList.remove('btn-secondary');
                     p3.classList.add('btn-primary');
-=======
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                 }
             }
 
@@ -337,32 +247,23 @@ unset($_SESSION['msg']);
             var partform1 = document.getElementById('step1'),
                 partform2 = document.getElementById('step2'),
                 partform3 = document.getElementById('step3');
-<<<<<<< HEAD
             var line1 = document.getElementById('progress-bar'),
                 p2 = document.getElementById('p2'),
                 p3 = document.getElementById('p3');
-=======
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
             if (step == 2) {
                 partform1.style.display = "block";
                 partform2.style.display = "none";
                 partform3.style.display = "none";
-<<<<<<< HEAD
                 line1.style.width = "0%";
                 p2.classList.remove('btn-primary');
                 p2.classList.add('btn-secondary');
-=======
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
             } else if (step == 3) {
                 partform1.style.display = "none";
                 partform2.style.display = "block";
                 partform3.style.display = "none";
-<<<<<<< HEAD
                 line1.style.width = "50%";
                 p3.classList.remove('btn-primary');
                 p3.classList.add('btn-secondary');
-=======
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
             }
         }
     </script>

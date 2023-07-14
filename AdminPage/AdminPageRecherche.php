@@ -132,6 +132,7 @@ if($_POST['forme1']=="" && $_POST['forme2']=="" && $_POST['forme3']==""){
                         $i = 0;
                         $bdd = new PDO("mysql:host=$serveur;dbname=$base;charset=utf8", $utilisateur, $mdp);
                         if($_POST['forme1']!="" && $_POST['forme2']=="" && $_POST['forme3']=="") {
+// echo 'ggggggh;';
                         $reponse1 = " SELECT * FROM `doctorants` WHERE `id_admin`=? AND `formation_doctorale`=? ";
                         $stm1 = $bdd->prepare($reponse1);
                         $donnees1 = array($_SESSION['id'], $_POST['forme1']);
@@ -225,6 +226,11 @@ if($_POST['forme1']=="" && $_POST['forme2']=="" && $_POST['forme3']==""){
             <?php
    
 ?>
+            <!-- Button trigger modal -->
+            <!-- <a href="AjouterDoctorants1.php" class="btn btn-primary">
+                Ajouter Doctorant
+            </a> -->
+            <!-- </div> -->
         </center>
     </div>
 <?php

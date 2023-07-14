@@ -63,7 +63,6 @@ try {
             <div class="content d-flex justify-content-center align-items-center  flex-column bd-highlight mb-3 ">
 
 
-<<<<<<< HEAD
 
                 <div class="position-relative m-4  p-2 bd-highlight" style="width:50%;">
                     <div class="progress" style="height: 1px;">
@@ -72,23 +71,11 @@ try {
                     <div data-title="Information personnel" id="p1" class="position-absolute top-2 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</div>
                     <div data-title="Education" id="p2" class="position-absolute top-2 start-50 translate-middle btn btn-sm btn-secondary  rounded-pill" style="width: 2rem; height:2rem;">2</div>
                     <div data-title="Autre" id="p3" class="position-absolute top-2 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</div>
-=======
-                <div class="position-relative m-4  p-2 bd-highlight" style="width:50%;">
-                    <div class="progress" style="height: 1px;">
-                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
-                    <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
-                    <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                 </div>
 
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                 <section class="container border border-3 rounded  shadow-lg p-3 mb-5 bg-body p-2 bd-highlight">
                     <form action="ModifierDoctorants2.php" id="formDoc" method="POST">
                         <div id="step1">
@@ -123,11 +110,7 @@ try {
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="exampleInputEmail1">Telephone</label>
-<<<<<<< HEAD
                                     <input type="text" class="form-control" id="tele" aria-describedby="emailHelp" placeholder="Enter numbre telephone" name="tele" value="<?php echo $result['tlf']; ?>" required>
-=======
-                                    <input type="text" class="form-control" id="tele" aria-describedby="emailHelp" placeholder="Enter numbre telephone" name="tele" value="<?php echo "0".$result['tlf']; ?>" required>
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                                 </div>
                             </div>
 
@@ -192,7 +175,6 @@ try {
                                     </select>
                                 </div>
                                 <div class="form-group col-md-6">
-<<<<<<< HEAD
                                     <label for="exampleInputEmail1">Niveau </label>
                                     <select class="custom-select" id="niveau" readonly name="niveau" required>
                                         <option id="searcharea_expanded_fisrt_option" value="<?php echo $result['niveau']; ?>"><?php echo $result['niveau']; ?></option>
@@ -217,11 +199,6 @@ try {
                                     </select>
                                 </div>
                                 
-=======
-                                    <label for="exampleInputEmail1">Niveau</label>
-                                    <input type="text" class="form-control" id="niveau" aria-describedby="emailHelp" value="<?php echo $result['niveau']; ?>" placeholder="Enter CIN" name="niveau" required>
-                                </div>
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                                 <div class="form-group col-md-6">
                                     <label for="exampleInputEmail1">Date d'inscription</label>
                                     <input type="datetime" class="form-control" id="datei" aria-describedby="emailHelp" readonly value="<?php echo $result['date_inscription']; ?>" placeholder="Enter CIN" name="datei">
@@ -284,12 +261,9 @@ try {
                     var partform1 = document.getElementById('step1'),
                         partform2 = document.getElementById('step2'),
                         partform3 = document.getElementById('step3');
-<<<<<<< HEAD
                     var line1 = document.getElementById('progress-bar'),
                         p2 = document.getElementById('p2'),
                         p3 = document.getElementById('p3');
-=======
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                     if (step == 1) {
                         var nom = document.getElementById("nom"),
                             prenom = document.getElementById("prenom"),
@@ -307,12 +281,9 @@ try {
                             partform1.style.display = "none";
                             partform2.style.display = "block";
                             partform3.style.display = "none";
-<<<<<<< HEAD
                             line1.style.width = "50%";
                             p2.classList.remove('btn-secondary');
                             p2.classList.add('btn-primary');
-=======
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                         }
 
                     } else if (step == 2) {
@@ -328,12 +299,9 @@ try {
                             partform1.style.display = "none";
                             partform2.style.display = "none";
                             partform3.style.display = "block";
-<<<<<<< HEAD
                             line1.style.width = "100%";
                             p3.classList.remove('btn-secondary');
                             p3.classList.add('btn-primary');
-=======
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                         }
                     }
 
@@ -343,32 +311,23 @@ try {
                     var partform1 = document.getElementById('step1'),
                         partform2 = document.getElementById('step2'),
                         partform3 = document.getElementById('step3');
-<<<<<<< HEAD
                     var line1 = document.getElementById('progress-bar'),
                         p2 = document.getElementById('p2'),
                         p3 = document.getElementById('p3');
-=======
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                     if (step == 2) {
                         partform1.style.display = "block";
                         partform2.style.display = "none";
                         partform3.style.display = "none";
-<<<<<<< HEAD
                         line1.style.width = "0%";
                         p2.classList.remove('btn-primary');
                         p2.classList.add('btn-secondary');
-=======
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                     } else if (step == 3) {
                         partform1.style.display = "none";
                         partform2.style.display = "block";
                         partform3.style.display = "none";
-<<<<<<< HEAD
                         line1.style.width = "50%";
                         p3.classList.remove('btn-primary');
                         p3.classList.add('btn-secondary');
-=======
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                     }
                 }
             </script>

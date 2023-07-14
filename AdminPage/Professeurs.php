@@ -44,11 +44,7 @@ unset($_SESSION['msg']);
     </header>
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
-<<<<<<< HEAD
             <div> <a href="../AdminPage/AdminPage.php" class="nav_logo-icon"> <i class='bx bxs-graduation nav_logo'></i> <span class="nav_logo-name">UAEDOC</span> </a>
-=======
-            <div> <a href="#" class="nav_logo-icon"> <i class='bx bxs-graduation nav_logo'></i> <span class="nav_logo-name">UAEDOC</span> </a>
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
                 <div class="nav_list"> <a href="AdminPage.php" class="nav_link"><i class='bx bx-group nav_icon'></i><span class="nav_name">Doctorants</span> </a>
                     <a href="Professeurs.php" class="nav_link active"> <i class='bx bx-book-reader nav_icon'></i> <span class="nav_name">Professeurs</span> </a>
                     <a href="Structure.php" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Structure de Recherche</span> </a>
@@ -65,7 +61,6 @@ unset($_SESSION['msg']);
     <!--Container Main start-->
     <!-- <div style="margin-top:100px;"> -->
     <div class="container-feild border  rounded shadow-lg p-3 mb-5 bg-body p-2 bd-highlight " style="margin-top: 2%;">
-<<<<<<< HEAD
         <div style="text-align: right;">
             <div style="text-align: right;">
                 <form action="ProfesseursRecherche.php" method="POST" id="formDoc">
@@ -175,103 +170,6 @@ unset($_SESSION['msg']);
                         } ?>
     <script src="sidebar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-=======
-        <center>
-            <table class="table table-striped" style="width: 85%;">
-                <thead>
-                    <tr>
-                        <th scope="col">
-                            <center>N</center>
-                        </th>
-                        <th scope="col">
-                            <center>Nom</center>
-                        </th>
-                        <th scope="col">
-                            <center>Prénom</center>
-                        </th>
-                        <th scope="col">
-                            <center>Département</center>
-                        </th>
-                        <th scope="col">
-                            <center>Spécialité</center>
-                        </th>
-                        <th scope="col">
-                            <center>Structure de recherche</center>
-                        </th>
-                        <th scope="col">
-                            <center>Supprimer</center>
-                        </th>
-                        <th scope="col">
-                            <center>Modifier</center>
-                        </th>
-                        <th scope="col">
-                            <center>Détails</center>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    try {
-                        $i = 0;
-                        $bdd = new PDO("mysql:host=$serveur;dbname=$base;charset=utf8", $utilisateur, $mdp);
-
-                        $reponse1 = " SELECT * FROM `professeur` WHERE `id`=? ";
-                        $stm1 = $bdd->prepare($reponse1);
-                        $donnees1 = array($_SESSION['id']);
-                        $stm1->execute($donnees1);
-                        while ($result1 = $stm1->fetch(PDO::FETCH_ASSOC)) {
-                            $i++;
-
-
-                    ?>
-                            <tr>
-                                <td scope="row">
-                                    <center><strong><?php echo $i; ?></strong></center>
-                                </td>
-                                <td scope="row">
-                                    <center><strong><?php echo $result1['Nom']; ?></strong></center>
-                                </td>
-                                <td>
-                                    <center><?php echo $result1['Prenom']; ?></center>
-                                </td>
-                                <td>
-                                    <center><?php echo $result1['departement']; ?></center>
-                                </td>
-                                <td>
-                                    <center><?php echo $result1['specialite']; ?></center>
-                                </td>
-                                <td>
-                                    <center><?php echo $result1['structure_de_recherche']; ?></center>
-                                </td>
-                                <td>
-                                    <center><a href="SupprimerProfesseur.php?id_professeur=<?php echo $result1['id_professeur']; ?>"><i class='bx bx-trash' style='color:#ea1818' title="Supprimer"></i></a></center>
-                                </td>
-                                <td>
-                                    <center><a href="ModifierProfesseur.php?id_professeur=<?php echo $result1['id_professeur']; ?>"><i class='bx bxs-edit' style='color:#39d119' title="Modifier"></i></a></center>
-                                </td>
-                                <td>
-                                    <center><a href="DetialsProfesseur.php?id_professeur=<?php echo $result1['id_professeur']; ?>"><i class='bx bxs-detail' style='color:#1c30c2' title="Voir les details"></i></a></center>
-                                </td>
-                            </tr>
-                        <?php
-                        }
-                        ?>
-                </tbody>
-            </table>
-            <!-- Button trigger modal -->
-            <a href="AjouterProfesseur.php" class="btn btn-primary">
-                Ajouter Professeur
-            </a>
-            <!-- </div> -->
-        </center>
-    </div>
-<?php
-                    } catch (exception $e) {
-                        echo "erreur" . $e->getMessage();
-                    } ?>
-<script src="sidebar.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
->>>>>>> 884f2f56503ecdcdadaa3f49602f43f0fe8177fa
 
 </body>
 
